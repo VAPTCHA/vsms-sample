@@ -1,2 +1,4 @@
 # vsms-dotnet-demo
-v-sms demo, C#
+v-sms sample
+
+
