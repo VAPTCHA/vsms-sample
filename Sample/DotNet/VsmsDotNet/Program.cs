@@ -61,7 +61,7 @@ namespace Vsms
         }
 
         /// <summary>
-        /// 可以由前端或后端发起
+        /// 后端发起
         /// </summary>
         /// <returns></returns>
         public static async Task<bool> SendSmsCodeAsync()
@@ -100,7 +100,7 @@ namespace Vsms
         }
 
         /// <summary>
-        /// 可以由前端或后端发起
+        /// 后端发起
         /// </summary>
         /// <returns></returns>
         public static async Task<bool> VerifySmsCodeAsync()
