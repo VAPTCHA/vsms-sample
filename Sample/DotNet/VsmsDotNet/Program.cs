@@ -106,7 +106,7 @@ namespace Vsms
         public static async Task<bool> VerifySmsCodeAsync()
         {
             var hc = new HttpClient();
-            var url = "https://smsapi.vaptcha.com/sms/sendsmscode";
+            var url = "https://smsapi.vaptcha.com/sms/verifysms";
             var secretKey = "123456789abcdef12345678abcdef12";
             var vid = "123456789abcdef123456789";
             var code = "123456"; //用户收到的验证码
