@@ -21,7 +21,7 @@ namespace Vsms
         public static async Task<bool> SendSmsAsync()
         {
             var hc = new HttpClient();
-            var url = "https://smsapi.vaptcha.com/sms/send";
+            var url = "https://smsapi.vaptcha.com/sms/sendcode";
             var secretKey = "123456789abcdef12345678abcdef12"; //SecretKey
             var vid = "123456789abcdef123456789"; //验证单元Id
             var token = "432156789abcdef123456789";//可以为空
