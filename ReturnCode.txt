@@ -1,59 +1,60 @@
- https://smsapi.vaptcha.com/sms/send
- 2001 ³É¹¦ 
- 2003 Ç©ÃûÎª¿Õ 
- 2004 Ã»ÓĞÓÃ»§ĞÅÏ¢»º´æ 
- 2005 ÑéÖ¤Âë¸ñÊ½´íÎó 
- 2006 ¹ú±ğÂë´íÎó 
- 2007 ÊÖ»úºÅÂë¸ñÊ½´íÎó 
- 2008 Ã»ÓĞÃÜÔ¿ 
- 2009 Ç©Ãû´íÎó 
- 2010 token¹ıÆÚ 
- 2011 Ã»ÓĞ¸ÃÓÃ»§ 
- 2012 Ê£Óà¶ÌĞÅÌõÊı²»×ã 
- 2013 ÏµÍ³Î¬»¤ 
- 2014 ÏµÍ³Éı¼¶ 
- 2015 ¶ÌĞÅ³¤¶ÈÊÜÏŞ 
- 2016 ¶ÌĞÅÄÚÈİÊÜÏŞ 
- 2017 IPÊÜÏŞ 
- 2018 ·¢ËÍÆµÂÊ¹ı¿ì£¬»»ºÅÂë»òÉÔºóÔÙÊÔ 
- 2019 ·¢ËÍÍ¨µÀ´íÎó 
- 2020 µ±Ç°Ê±¼ä²»ÔÊĞí·¢ËÍ¶ÌĞÅ 
- 2021 tokenÑéÖ¤´ÎÊıÉÏÏŞ3 
- 2022 Ã»ÓĞ´øÑéÖ¤µ¥Ôª 
- 2030 Òì³£/´íÎó 
-
- https://smsapi.vaptcha.com/sms/sendsmscode
- 2101 ³É¹¦ 
- 2103 Ç©ÃûÎª¿Õ 
- 2104 Ã»ÓĞÓÃ»§ĞÅÏ¢»º´æ 
- 2105 ÑéÖ¤Âë¸ñÊ½´íÎó 
- 2106 ¹ú±ğÂë´íÎó 
- 2107 ÊÖ»úºÅÂë¸ñÊ½´íÎó 
- 2108 Ã»ÓĞÃÜÔ¿ 
- 2109 Ç©Ãû´íÎó 
- 2110 token¹ıÆÚ 
- 2111 Ã»ÓĞ¸ÃÓÃ»§ 
- 2112 Ê£Óà¶ÌĞÅÌõÊı²»×ã 
- 2113 ÏµÍ³Î¬»¤ 
- 2114 ÏµÍ³Éı¼¶ 
- 2115 ¶ÌĞÅ³¤¶ÈÊÜÏŞ 
- 2116 ¶ÌĞÅÄÚÈİÊÜÏŞ 
- 2117 IPÊÜÏŞ 
- 2118 ·¢ËÍÆµÂÊ¹ı¿ì£¬»»ºÅÂë»òÉÔºóÔÙÊÔ 
- 2119 ·¢ËÍÍ¨µÀ´íÎó 
- 2121 µ±Ç°Ê±¼ä²»ÔÊĞí·¢ËÍ¶ÌĞÅ 
- 2121 tokenÑéÖ¤´ÎÊıÉÏÏŞ 3 
- 2122 Ã»ÓĞ´øÑéÖ¤µ¥Ôª
- 2123 ·¢ËÍÊ±¼ä²»×ã2·ÖÖÓ 
- 2130 Òì³£/´íÎó 
-
- https://smsapi.vaptcha.com/sms/verify
- 2201 ³É¹¦ 
- 2202 Ç©ÃûÎª¿Õ 
- 2203 Ã»ÓĞ´øÑéÖ¤µ¥Ôª 
- 2204 Ã»ÓĞÃÜÔ¿ 
- 2205 Ç©Ãû´íÎó 
- 2206 ÑéÖ¤´ÎÊıÉÏÏŞ 
- 2207 ÑéÖ¤Âë¹ıÆÚ 
- 2208ÑéÖ¤Âë²»Æ¥Åä 
- 2230 Òì³£/´íÎó 
+public static class SmsReturnCode
+    {
+        /// <summary>
+        /// 200 æˆåŠŸ
+        /// </summary>
+        public static readonly int Succeed = 200;
+        /// <summary>
+        /// 201 å‘é€å¤±è´¥
+        /// </summary>
+        public static readonly int Fail = 201; 
+        /// <summary>
+        /// 202 ç”¨æˆ·éªŒè¯å¤±è´¥
+        /// </summary>
+        public static readonly int AccessDenied = 202;
+        /// <summary>
+        /// 203 å‰©ä½™çŸ­ä¿¡æ¡æ•°ä¸è¶³
+        /// </summary>
+        public static readonly int UsedUp = 203;
+        /// <summary>
+        /// 204 å‘é€é¢‘ç‡è¿‡å¿«ï¼Œæ¢å·ç æˆ–ç¨åå†è¯•
+        /// </summary>
+        public static readonly int RateLimit = 204;
+        /// <summary>
+        /// 205 tokenéªŒè¯å¤±è´¥
+        /// </summary>
+        public static readonly int TokenError = 205; 
+        /// <summary>
+        /// 206 æ‰‹æœºå·ç æ ¼å¼é”™è¯¯
+        /// </summary>
+        public static readonly int PhoneFormat = 206;
+        /// <summary>
+        /// 207 éªŒè¯ç æ ¼å¼é”™è¯¯
+        /// </summary>
+        public static readonly int CodeFormat = 207;
+        /// <summary>
+        /// 208 éªŒè¯æ¬¡æ•°ä¸Šé™
+        /// </summary>
+        public static readonly int VerifyCountLimit = 209;
+        /// <summary>
+        /// 209 éªŒè¯ç è¿‡æœŸ
+        /// </summary>
+        public static readonly int VerifyCodeExpire = 209;
+        /// <summary>
+        /// 210 éªŒè¯ç ä¸åŒ¹é…
+        /// </summary>
+        public static readonly int VerifyCodeNotMatches = 210;
+        /// <summary>
+        /// 211 æ¨¡æ¿æ•°æ®é”™è¯¯
+        /// </summary>
+        public static readonly int DataError = 211;
+        /// <summary>
+        /// 212 æ¨¡æ¿ç¼–å·é”™è¯¯
+        /// </summary>
+        public static readonly int TypeError = 212; 
+        /// <summary>
+        /// 230 ç³»ç»Ÿç»´æŠ¤
+        /// </summary>
+        public static readonly int Exception = 230;
+       
+    } 
