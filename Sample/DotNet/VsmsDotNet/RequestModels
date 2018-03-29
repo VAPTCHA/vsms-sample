@@ -1,0 +1,35 @@
+public class SendSmsRequest
+    {
+        public string vid { get; set; }
+        public string token { get; set; }
+        public string label { get; set; }
+        public string code { get; set; }
+        public string phone { get; set; }
+        public string countrycode { get; set; }
+        public string time { get; set; }
+        public string version { get; set; }
+        public string smskey { get; set; }
+        public string expiretime { get; set; }
+    }
+    public class SendSmsCodeRequest
+    {
+        public string vid { get; set; }
+        public string token { get; set; }
+        public string label { get; set; }
+        public string phone { get; set; }
+        public string countrycode { get; set; }
+        public string time { get; set; }
+        public string version { get; set; }
+        public string smskey { get; set; }
+    }
+
+    public class SmsVerifyRequest
+    {
+        public string vid { get; set; }
+        public string code { get; set; }
+        public string phone { get; set; }
+        public string countrycode { get; set; }
+        public string time { get; set; }
+        public string version { get; set; }
+        public string smskey { get; set; }
+    }
