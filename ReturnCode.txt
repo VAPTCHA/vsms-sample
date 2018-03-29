@@ -44,14 +44,7 @@ public static class SmsReturnCode
         /// 210 验证码不匹配
         /// </summary>
         public static readonly int VerifyCodeNotMatches = 210;
-        /// <summary>
-        /// 211 模板数据错误
-        /// </summary>
-        public static readonly int DataError = 211;
-        /// <summary>
-        /// 212 模板编号错误
-        /// </summary>
-        public static readonly int TypeError = 212; 
+       
         /// <summary>
         /// 230 系统维护
         /// </summary>
