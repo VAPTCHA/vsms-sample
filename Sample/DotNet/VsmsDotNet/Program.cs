@@ -32,8 +32,8 @@ namespace Vsms
                 expiretime = "10",//minute
                 phone = "13xxxxxxxxx",
                 smskey = "your smskey",
-                time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
-                token = "your token",
+                time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(),
+                token = "your token", //由vaptcha手势验证码验证通过后返回的token，可以为空
                 version = "1.0",
             }.ToJson();
             var content = new StringContent(body, Encoding.UTF8, "application/json");
@@ -68,8 +68,8 @@ namespace Vsms
                 label = "your site name", 
                 phone = "13xxxxxxxxx",
                 smskey = "123456",
-                time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
-                token = "your token",
+                time = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(),
+                token = "your token", //由vaptcha手势验证码验证通过后返回的token，可以为空
                 version = "1.0" 
             }.ToJson();
             var content = new StringContent(body, Encoding.UTF8, "application/json");
@@ -95,7 +95,7 @@ namespace Vsms
         public static async Task<bool> VerifySmsCodeAsync()
         {
             var hc = new HttpClient();
-            var url = "https://smsapi.vaptcha.com/sms/verifysms";
+            var url = "https://smsapi.vaptcha.com/sms/verify";
           var body = new SmsVerifyRequest()
             {
                 vid = "your vid", 
