@@ -9,8 +9,8 @@ public static class SmsReturnCode
         /// </summary>
         public static readonly int Fail = 201; 
         /// <summary>
-        /// 202 用户验证失败
-        /// </summary>
+        /// 202 用户验证失败 smskey不正确
+        /// </summary>
         public static readonly int AccessDenied = 202;
         /// <summary>
         /// 203 剩余短信条数不足
