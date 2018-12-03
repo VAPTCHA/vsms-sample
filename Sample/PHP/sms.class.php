@@ -20,7 +20,7 @@ class VSMS
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
             curl_setopt($ch, CURLOPT_HEADER, false);  
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('ContentType:application/x-www-form-urlencoded'));  
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('ContentType:application/json'));  
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
             curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);  
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5*1000);  
@@ -32,7 +32,7 @@ class VSMS
             $opts = array(
                 'http' => array(
                     'method' => 'POST',
-                    'header'=> "Content-type: application/x-www-form-urlencoded\r\n" . "Content-Length: " . strlen($data) . "\r\n",
+                    'header'=> "Content-type: application/json\r\n" . "Content-Length: " . strlen($data) . "\r\n",
                     'content' => $data,
                     'timeout' => 5*1000
                 ),
